@@ -66,7 +66,7 @@ export function Header({ logoUrl, socials }: { logoUrl?: string; socials: { labe
           </nav>
 
           <div className="flex items-center gap-2 sm:gap-4">
-            <Link href="/randevu" className={buttonClass("primary", "hidden !px-5 !py-3 md:inline-flex")}>
+            <Link href="/randevu" className={buttonClass("primary", "max-md:!hidden !px-5 !py-3")}>
               Randevu Talebi
             </Link>
             <a

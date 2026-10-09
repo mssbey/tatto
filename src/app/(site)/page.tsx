@@ -3,14 +3,14 @@ import { TattooCalculator } from "@/components/forms/TattooCalculator";
 import Link from "next/link";
 import { ArtImage, DemoBadge } from "@/components/media/ArtImage";
 import { InkBackdrop } from "@/components/motion/InkBackdrop";
-import { Parallax } from "@/components/motion/Parallax";
 import { SquidLine } from "@/components/motion/SquidLine";
 import { ProductCard } from "@/components/store/ProductCard";
 import { ButtonLink } from "@/components/ui/Button";
 import { WorkGallery } from "@/components/works/WorkGallery";
 import { getFeaturedProducts, getFeaturedWorks, getPublishedArtists } from "@/lib/queries/catalog";
 import { formatAddress, getSettings } from "@/lib/settings";
-import { heroVisual, processVisuals, studioVisual, type Visual } from "@/lib/visuals";
+import { AtelierSection } from "@/components/home/AtelierSection";
+import { heroVisual, processVisuals, type Visual } from "@/lib/visuals";
 
 
 export default async function HomePage() {
@@ -21,7 +21,6 @@ export default async function HomePage() {
     getPublishedArtists(),
   ]);
   const hero = heroVisual(settings);
-  const studio = studioVisual(settings);
   const process: Visual[] = processVisuals();
   if (process.length < 3) {
     // Gerçek süreç görseli yoksa yayınlanmış çalışmalardan yararlan
@@ -122,60 +121,8 @@ export default async function HomePage() {
         <TattooCalculator />
       </section>
 
-      <section className="relative overflow-hidden border-y border-line bg-surface py-24 sm:py-36" aria-labelledby="story-title">
-        <div className="container-x grid gap-16 lg:grid-cols-12">
-          <div className="lg:col-span-6 lg:sticky lg:top-32 lg:self-start">
-            <p className="eyebrow mb-6" data-reveal="fade">
-              02 — Atölye
-            </p>
-            <h2 id="story-title" className="display text-[length:var(--text-display-lg)]" data-reveal="up">
-              Mürekkep
-              <br />
-              bizim dilimiz.
-            </h2>
-            <div className="mt-10 max-w-lg space-y-5 text-lg leading-relaxed text-ash" data-reveal="up" data-reveal-delay="0.1">
-              <p>
-                Her çalışma bir görüşmeyle başlar. Fikrini dinler, bedendeki yerini birlikte düşünür ve tasarımı sana özel
-                çizeriz.
-              </p>
-              <p>
-                Aynı dil stüdyonun dışında da sürer: fake skin üzerine işlediğimiz eserler, dövmenin tenle kurduğu ilişkiyi
-                duvara taşır.
-              </p>
-            </div>
-            <ol className="mt-12 grid max-w-lg grid-cols-3 border-t border-line pt-6 text-sm" data-reveal="up" data-reveal-delay="0.2">
-              {["Görüşme", "Çizim", "Uygulama"].map((s, i) => (
-                <li key={s}>
-                  <span className="block text-xs text-blood-light tabular-nums">0{i + 1}</span>
-                  <span className="mt-1 block uppercase tracking-[0.16em]">{s}</span>
-                </li>
-              ))}
-            </ol>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:col-span-5 lg:col-start-8">
-            {process.slice(0, 3).map((v, i) => (
-              <Parallax
-                key={v.url + i}
-                offset={i === 1 ? 70 : 40}
-                className={i === 0 ? "col-span-2" : i === 1 ? "mt-16" : ""}
-              >
-                <figure className="relative" data-reveal="clip" data-reveal-delay={String(i * 0.1)}>
-                  <ArtImage
-                    src={v.url}
-                    alt={v.alt}
-                    width={v.width}
-                    height={v.height}
-                    sizes="(min-width: 1024px) 36vw, 90vw"
-                    ratio={i === 0 ? 4 / 3 : 4 / 5}
-                  />
-                  {v.isDemo && <DemoBadge className="absolute left-3 top-3" />}
-                </figure>
-              </Parallax>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ------------------------------------------------ ATÖLYE */}
+      <AtelierSection images={process} />
 
       {/* ------------------------------------------------------ SANATÇILAR */}
       <section className="container-x py-24 sm:py-32" aria-labelledby="artists-title">
@@ -276,16 +223,6 @@ export default async function HomePage() {
 
       {/* ------------------------------------------------------ STÜDYO */}
       <section className="py-24 sm:py-32" aria-labelledby="studio-title">
-        {studio && (
-          <div className="relative mb-16 sm:mb-20" data-reveal="clip">
-            <Parallax offset={30}>
-              <div className="relative aspect-[16/10] max-h-[80vh] w-full overflow-hidden sm:aspect-[21/9]">
-                <Image src={studio.url} alt={studio.alt} fill sizes="100vw" className="object-cover" />
-              </div>
-            </Parallax>
-            {studio.isDemo && <DemoBadge className="absolute left-4 top-4" />}
-          </div>
-        )}
         <div className="container-x grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <p className="eyebrow mb-4" data-reveal="fade">
