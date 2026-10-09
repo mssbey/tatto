@@ -6,19 +6,22 @@ import { InkBackdrop } from "@/components/motion/InkBackdrop";
 import { SquidLine } from "@/components/motion/SquidLine";
 import { ProductCard } from "@/components/store/ProductCard";
 import { ButtonLink } from "@/components/ui/Button";
-import { WorkGallery } from "@/components/works/WorkGallery";
-import { getFeaturedProducts, getFeaturedWorks, getPublishedArtists } from "@/lib/queries/catalog";
+import { FeaturedWorksSection } from "@/components/home/FeaturedWorksSection";
+import { toGallery } from "@/components/works/toGallery";
+import { getFeaturedProducts, getFeaturedWorks, getPublishedArtists, getPublishedWorks, getWorkStyles } from "@/lib/queries/catalog";
 import { formatAddress, getSettings } from "@/lib/settings";
 import { AtelierSection } from "@/components/home/AtelierSection";
 import { heroVisual, processVisuals, type Visual } from "@/lib/visuals";
 
 
 export default async function HomePage() {
-  const [settings, works, products, artists] = await Promise.all([
+  const [settings, works, products, artists, allWorks, styles] = await Promise.all([
     getSettings(),
     getFeaturedWorks(6),
     getFeaturedProducts(4),
     getPublishedArtists(),
+    getPublishedWorks(),
+    getWorkStyles(),
   ]);
   const hero = heroVisual(settings);
   const process: Visual[] = processVisuals();
@@ -73,40 +76,13 @@ export default async function HomePage() {
       </section>
 
       {/* ---------------------------------------------- SEÇİLİ ÇALIŞMALAR */}
-      <section id="secili-calismalar" className="container-x scroll-mt-24 py-24 sm:py-32" aria-labelledby="works-title">
-        <div className="mb-14 flex flex-col justify-between gap-6 sm:mb-20 md:flex-row md:items-end">
-          <div>
-            <p className="eyebrow mb-4" data-reveal="fade">
-              01 — Seçili çalışmalar
-            </p>
-            <h2 id="works-title" className="display text-[length:var(--text-display-lg)]" data-reveal="up">
-              İz bırakanlar
-            </h2>
-          </div>
-          <Link href="/calismalar" className="group inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] link-underline" data-reveal="fade">
-            Tüm Çalışmalar <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
-          </Link>
-        </div>
-        {works.length ? (
-          <WorkGallery
-            layout="editorial"
-            works={works.map((w) => ({
-              id: w.id,
-              title: w.title,
-              imageUrl: w.imageUrl,
-              width: w.width,
-              height: w.height,
-              alt: w.alt,
-              style: w.style?.name ?? null,
-              artist: w.artist?.name ?? null,
-              placement: w.placement,
-              isDemo: w.isDemo,
-            }))}
-          />
-        ) : (
+      {works.length ? (
+        <FeaturedWorksSection works={toGallery(works)} styles={styles.map((st) => st.name)} total={allWorks.length} />
+      ) : (
+        <section id="secili-calismalar" className="container-x py-24">
           <EmptyNote text="Çalışmalar çok yakında burada olacak." />
-        )}
-      </section>
+        </section>
+      )}
 
       {/* ------------------------------------------------ MARKA ANLATISI */}
       <section className="container-x py-24 sm:py-32" aria-labelledby="price-title">
