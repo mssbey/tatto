@@ -7,7 +7,7 @@
  */
 export type SiteSettings = {
   brandName: string;
-  /** Yüklenen logo; boşsa "TATTOO SQUID" wordmark kullanılır. */
+  /** Yüklenen logo; boşsa "TATTOO STATION" wordmark kullanılır. */
   logoUrl: string;
   logoWidth: number;
   logoHeight: number;
@@ -51,7 +51,7 @@ export type SiteSettings = {
 };
 
 export const siteDefaults: SiteSettings = {
-  brandName: "Tattoo Squid",
+  brandName: "Tattoo station",
   logoUrl: "",
   logoWidth: 0,
   logoHeight: 0,

@@ -39,7 +39,7 @@ export function Header({ logoUrl, socials }: { logoUrl?: string; socials: { labe
         }`}
       >
         <div className="container-x flex items-center justify-between gap-6">
-          <Link href="/" className="relative z-10 shrink-0" aria-label="Tattoo Squid — Ana sayfa">
+          <Link href="/" className="relative z-10 shrink-0" aria-label="Tattoo station — Ana sayfa">
             <Wordmark logoUrl={logoUrl} />
           </Link>
 

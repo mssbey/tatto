@@ -20,12 +20,12 @@ const sans = Hanken_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(env.siteUrl),
   title: {
-    default: "Tattoo Squid — Dövme Stüdyosu ve Sanat Mağazası",
-    template: "%s — Tattoo Squid",
+    default: "Tattoo station — Dövme Stüdyosu ve Sanat Mağazası",
+    template: "%s — Tattoo station",
   },
   description: "Özgün dövme tasarımları ve fake skin üzerine işlenen koleksiyonluk eserler.",
-  applicationName: "Tattoo Squid",
-  openGraph: { type: "website", locale: "tr_TR", siteName: "Tattoo Squid" },
+  applicationName: "Tattoo station",
+  openGraph: { type: "website", locale: "tr_TR", siteName: "Tattoo station" },
   alternates: { canonical: "/" },
 };
 

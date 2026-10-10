@@ -51,7 +51,7 @@ export default async function HomePage() {
           <div className="max-w-[850px]">
             <p className="mb-8 flex items-center gap-4 text-[0.65rem] font-medium uppercase tracking-[0.28em] text-bone/80 sm:text-xs" data-reveal="fade">
               <span className="h-px w-10 bg-blood-light" aria-hidden />
-              Tattoo Squid · Dövme & Sanat
+              Tattoo station · Dövme & Sanat
             </p>
             <h1 id="hero-title" className="display text-[clamp(3.4rem,8vw,8.5rem)] leading-[0.98] tracking-[-0.015em]">
               <span className="block" data-reveal="up">Teninde</span>

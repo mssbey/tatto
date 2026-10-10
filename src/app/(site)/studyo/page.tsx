@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/Button";
@@ -7,7 +7,7 @@ import { processVisuals, studioVisual } from "@/lib/visuals";
 
 export const metadata: Metadata = {
   title: "Stüdyo",
-  description: "Tattoo Squid'in dövme ve sanat yaklaşımını keşfet. Tasarım sürecini öğren, stüdyo ziyaretini planla.",
+  description: "Tattoo station'in dövme ve sanat yaklaşımını keşfet. Tasarım sürecini öğren, stüdyo ziyaretini planla.",
   alternates: { canonical: "/studyo" },
 };
 
@@ -29,7 +29,7 @@ export default async function StudioPage() {
       <section className="container-x pb-16 pt-36 sm:pb-24 sm:pt-44" aria-labelledby="studio-title">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <header className="lg:col-span-6">
-            <p className="eyebrow mb-7 flex items-center gap-3"><span className="h-px w-8 bg-blood-light" />Tattoo Squid / Stüdyo</p>
+            <p className="eyebrow mb-7 flex items-center gap-3"><span className="h-px w-8 bg-blood-light" />Tattoo station / Stüdyo</p>
             <h1 id="studio-title" className="display text-[clamp(3.5rem,7.6vw,7.5rem)]" data-reveal="up">Bir fikir.<br />Bir çizgi.<br /><span className="text-bone/45">Kalıcı bir iz.</span></h1>
             <p className="mt-8 max-w-lg text-lg leading-relaxed text-ash">Dövmenin zanaatla, sanatın kişisel hikâyelerle buluştuğu bir atölye. Her çalışmanın merkezinde senin fikrin var.</p>
             <div className="mt-9 flex flex-wrap gap-3"><ButtonLink href="/randevu" arrow>Ziyaretini Planla</ButtonLink><ButtonLink href="/calismalar" variant="ghost">Çalışmaları Gör →</ButtonLink></div>
@@ -49,7 +49,7 @@ export default async function StudioPage() {
       <section className="border-y border-line bg-surface/50 py-16 sm:py-24" aria-labelledby="approach-title">
         <div className="container-x grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5"><p className="eyebrow mb-5">01 — Yaklaşımımız</p><h2 id="approach-title" className="display text-[length:var(--text-display-md)]">Tenin üzerinde.<br />Hayatın içinde.</h2></div>
-          <div className="space-y-6 lg:col-span-6 lg:col-start-7"><p className="text-xl leading-relaxed text-bone/85">Dövmeyi yalnızca bir desen olarak değil, taşıdığın bir ifade olarak görüyoruz.</p><p className="leading-relaxed text-ash">Tattoo Squid’de fikirler konuşulur, kâğıda dökülür ve tene işlenir. Aynı sanat dili, fake skin üzerine hazırlanan koleksiyonluk eserlerde de devam eder; mürekkebin hikâyesi yaşam alanına taşınır.</p><Link href="/store" className="link-underline inline-block text-xs uppercase tracking-[0.2em]">Atölye koleksiyonunu keşfet →</Link></div>
+          <div className="space-y-6 lg:col-span-6 lg:col-start-7"><p className="text-xl leading-relaxed text-bone/85">Dövmeyi yalnızca bir desen olarak değil, taşıdığın bir ifade olarak görüyoruz.</p><p className="leading-relaxed text-ash">Tattoo station’de fikirler konuşulur, kâğıda dökülür ve tene işlenir. Aynı sanat dili, fake skin üzerine hazırlanan koleksiyonluk eserlerde de devam eder; mürekkebin hikâyesi yaşam alanına taşınır.</p><Link href="/store" className="link-underline inline-block text-xs uppercase tracking-[0.2em]">Atölye koleksiyonunu keşfet →</Link></div>
         </div>
       </section>
 

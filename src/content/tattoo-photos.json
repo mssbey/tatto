@@ -1,0 +1,392 @@
+[
+  {
+    "file": "/tattoos/portfolio/tattoo-01.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Kol boyunca siyah ve gri kompozisyon",
+    "style": "Realism",
+    "placement": "Kol",
+    "alt": "Tattoo station tarafından yapılan dövme: kol boyunca siyah ve gri kompozisyon",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (10).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-02.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Portre ve yazı kompozisyonu",
+    "style": "Realism",
+    "placement": "Üst kol",
+    "alt": "Tattoo station tarafından yapılan dövme: portre ve yazı kompozisyonu",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (6).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-03.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Güneş ve bulutlar",
+    "style": "Blackwork",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: güneş ve bulutlar",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (9).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-04.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Dallanan çizgiler",
+    "style": "Blackwork",
+    "placement": "El ve ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: dallanan çizgiler",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.01 (10).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-05.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Geometrik desen",
+    "style": "Ornamental",
+    "placement": "Baldır",
+    "alt": "Tattoo station tarafından yapılan dövme: geometrik desen",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.01 (9).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-06.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Ejderha kompozisyonu",
+    "style": "Realism",
+    "placement": "Kol",
+    "alt": "Tattoo station tarafından yapılan dövme: ejderha kompozisyonu",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.02 (4).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-07.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Küçük figür ve örümcek ağı",
+    "style": "Illustrative",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: küçük figür ve örümcek ağı",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (1).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-08.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Örümcek ağı",
+    "style": "Blackwork",
+    "placement": "Dirsek",
+    "alt": "Tattoo station tarafından yapılan dövme: örümcek ağı",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (2).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-09.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Figür ve kırlangıç",
+    "style": "Illustrative",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: figür ve kırlangıç",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (3).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-10.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "81",
+    "style": "Lettering",
+    "placement": "Üst kol",
+    "alt": "Tattoo station tarafından yapılan dövme: 81",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (4).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-11.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "İskelet figürü",
+    "style": "Illustrative",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: iskelet figürü",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (5).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-12.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "El üzerinde figür kompozisyonu",
+    "style": "Illustrative",
+    "placement": "El",
+    "alt": "Tattoo station tarafından yapılan dövme: el üzerinde figür kompozisyonu",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (7).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-13.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Mitolojik figür",
+    "style": "Illustrative",
+    "placement": "Üst kol",
+    "alt": "Tattoo station tarafından yapılan dövme: mitolojik figür",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59 (8).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-14.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Küçük figür çalışması",
+    "style": "Illustrative",
+    "placement": "Kol",
+    "alt": "Tattoo station tarafından yapılan dövme: küçük figür çalışması",
+    "source": "WhatsApp Image 2026-10-10 at 10.45.59.jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-15.webp",
+    "width": 1600,
+    "height": 1200,
+    "title": "Figürlerle kol kompozisyonu",
+    "style": "Illustrative",
+    "placement": "Kol",
+    "alt": "Tattoo station tarafından yapılan dövme: figürlerle kol kompozisyonu",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.00 (1).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-16.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Miğfer",
+    "style": "Blackwork",
+    "placement": "Üst kol",
+    "alt": "Tattoo station tarafından yapılan dövme: miğfer",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.00 (10).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-17.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Portre ve yazı",
+    "style": "Realism",
+    "placement": "Üst kol",
+    "alt": "Tattoo station tarafından yapılan dövme: portre ve yazı",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.00 (2).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-18.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Portre kompozisyonu",
+    "style": "Realism",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: portre kompozisyonu",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.00 (5).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-19.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "El üzerinde yazı",
+    "style": "Lettering",
+    "placement": "El",
+    "alt": "Tattoo station tarafından yapılan dövme: el üzerinde yazı",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.00 (6).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-20.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "İnce çizgili dallar",
+    "style": "Fine Line",
+    "placement": "Üst kol",
+    "alt": "Tattoo station tarafından yapılan dövme: ince çizgili dallar",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.00 (7).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-21.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "İnce çizgili bacak çalışması",
+    "style": "Fine Line",
+    "placement": "Baldır",
+    "alt": "Tattoo station tarafından yapılan dövme: ince çizgili bacak çalışması",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.00 (8).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-22.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Yüz kompozisyonu",
+    "style": "Realism",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: yüz kompozisyonu",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.00 (9).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-23.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "Uğur böceği ve küçük motifler",
+    "style": "Illustrative",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: uğur böceği ve küçük motifler",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.00.jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-24.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Sırtta ince çizgili figür",
+    "style": "Fine Line",
+    "placement": "Sırt",
+    "alt": "Tattoo station tarafından yapılan dövme: sırtta ince çizgili figür",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.01 (2).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-25.webp",
+    "width": 1152,
+    "height": 1536,
+    "title": "Omuzda siyah ve gri kompozisyon",
+    "style": "Realism",
+    "placement": "Üst kol",
+    "alt": "Tattoo station tarafından yapılan dövme: omuzda siyah ve gri kompozisyon",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.01 (3).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-26.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Figür ve saat",
+    "style": "Realism",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: figür ve saat",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.01 (5).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-27.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Ön kolda kaligrafi",
+    "style": "Lettering",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: ön kolda kaligrafi",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.01 (7).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-28.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Dikey kaligrafi",
+    "style": "Lettering",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: dikey kaligrafi",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.01 (8).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-29.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Küçük figürler",
+    "style": "Illustrative",
+    "placement": "Kol",
+    "alt": "Tattoo station tarafından yapılan dövme: küçük figürler",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.01.jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-30.webp",
+    "width": 1201,
+    "height": 1600,
+    "title": "Kadın yüzü",
+    "style": "Realism",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: kadın yüzü",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.02 (3).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-31.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Portre ve akışkan çizgiler",
+    "style": "Realism",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: portre ve akışkan çizgiler",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.02 (5).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-32.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Figürlerle bütün kol çalışması",
+    "style": "Realism",
+    "placement": "Kol",
+    "alt": "Tattoo station tarafından yapılan dövme: figürlerle bütün kol çalışması",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.02 (6).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-33.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Ön kolda portre",
+    "style": "Realism",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: ön kolda portre",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.02 (7).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-34.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Gözler",
+    "style": "Fine Line",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: gözler",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.02 (8).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-35.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "İki kolda desen çalışması",
+    "style": "Ornamental",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: iki kolda desen çalışması",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.02 (9).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-36.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Siyah ve gri kol çalışması",
+    "style": "Realism",
+    "placement": "Kol",
+    "alt": "Tattoo station tarafından yapılan dövme: siyah ve gri kol çalışması",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.03 (1).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-37.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Yıldız ve dalga motifleri",
+    "style": "Blackwork",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: yıldız ve dalga motifleri",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.03 (3).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-38.webp",
+    "width": 1395,
+    "height": 1600,
+    "title": "Detaylı figür kompozisyonu",
+    "style": "Realism",
+    "placement": "Kol",
+    "alt": "Tattoo station tarafından yapılan dövme: detaylı figür kompozisyonu",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.03 (4).jpeg"
+  },
+  {
+    "file": "/tattoos/portfolio/tattoo-39.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Pusula ve figürler",
+    "style": "Illustrative",
+    "placement": "Ön kol",
+    "alt": "Tattoo station tarafından yapılan dövme: pusula ve figürler",
+    "source": "WhatsApp Image 2026-10-10 at 10.46.03.jpeg"
+  }
+]

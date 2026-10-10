@@ -7,7 +7,7 @@ import { getPublishedArtists, getPublishedWorks, getWorkStyles } from "@/lib/que
 
 export const metadata: Metadata = {
   title: "Çalışmalar",
-  description: "Tattoo Squid dövme çalışmaları — stil ve sanatçıya göre filtrele.",
+  description: "Tattoo station dövme çalışmaları — stil ve sanatçıya göre filtrele.",
   alternates: { canonical: "/calismalar" },
 };
 

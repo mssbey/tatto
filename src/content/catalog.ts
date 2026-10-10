@@ -2,20 +2,22 @@
  * Statik site içeriği.
  *
  * Bu sürümde veritabanı ve yönetim paneli yoktur; çalışmalar ve Store eserleri
- * buradan okunur. Kayıtların tamamı DEMO'dur ve sitede "Demo" etiketiyle gösterilir.
- * Gerçek içerik geldiğinde bu dosya güncellenir (görseller: public/demo/manifest.json).
+ * buradan okunur. Dövmeler stüdyonun gerçek çalışmalarıdır; Store eserleri demodur.
  */
 import manifest from "../../public/demo/manifest.json";
+import tattooPhotos from "./tattoo-photos.json";
 import type { Artist, Category, Product, ProductImage, Work } from "@/lib/types";
 
 type ManifestKey = keyof typeof manifest;
 const img = (k: ManifestKey) => manifest[k];
 
 export const categories: Category[] = [
-  { id: 1, kind: "work_style", name: "Fine Line", slug: "fine-line", position: 0, isDemo: true },
-  { id: 2, kind: "work_style", name: "Blackwork", slug: "blackwork", position: 1, isDemo: true },
-  { id: 3, kind: "work_style", name: "Ornamental", slug: "ornamental", position: 2, isDemo: true },
-  { id: 4, kind: "work_style", name: "Dotwork", slug: "dotwork", position: 3, isDemo: true },
+  { id: 1, kind: "work_style", name: "Fine Line", slug: "fine-line", position: 0, isDemo: false },
+  { id: 2, kind: "work_style", name: "Blackwork", slug: "blackwork", position: 1, isDemo: false },
+  { id: 3, kind: "work_style", name: "Ornamental", slug: "ornamental", position: 2, isDemo: false },
+  { id: 4, kind: "work_style", name: "Realism", slug: "realism", position: 3, isDemo: false },
+  { id: 7, kind: "work_style", name: "Lettering", slug: "lettering", position: 4, isDemo: false },
+  { id: 8, kind: "work_style", name: "Illustrative", slug: "illustrative", position: 5, isDemo: false },
   { id: 5, kind: "product", name: "Fake Skin", slug: "fake-skin", position: 0, isDemo: true },
   { id: 6, kind: "product", name: "Çerçeveli Tablo", slug: "cerceveli-tablo", position: 1, isDemo: true },
 ];
@@ -25,39 +27,23 @@ export const artists: Artist[] = [];
 
 const styleId = (name: string) => categories.find((c) => c.kind === "work_style" && c.name === name)!.id;
 
-const workDefs: [string, string, string][] = [
-  ["Sarmal", "Blackwork", "Ön kol"],
-  ["Halka ve Kol", "Ornamental", "Üst kol"],
-  ["Yükselen Hatlar", "Fine Line", "Baldır"],
-  ["Merkez", "Blackwork", "Sırt"],
-  ["Gece Akıntısı", "Dotwork", "Omuz"],
-  ["İç Kontur", "Fine Line", "Kaburga"],
-  ["Dikey Akış", "Fine Line", "Bacak"],
-  ["Mandala Kesiti", "Ornamental", "Sırt"],
-  ["Tek Nokta", "Blackwork", "Bilek"],
-  ["Dolanış", "Dotwork", "Ön kol"],
-  ["Gölge Çalışması", "Dotwork", "Omuz"],
-  ["Uzun Çizgi", "Fine Line", "Sırt"],
-];
-
-export const works: Work[] = workDefs.map(([title, style, placement], i) => {
-  const im = img(`work-${i + 1}` as ManifestKey);
+export const works: Work[] = tattooPhotos.map((im, i) => {
   return {
     id: i + 1,
-    title,
+    title: im.title,
     description: "",
     imageUrl: im.file,
     width: im.width,
     height: im.height,
     alt: im.alt,
-    styleId: styleId(style),
+    styleId: styleId(im.style),
     artistId: null,
-    placement,
+    placement: im.placement,
     featured: i < 6,
     featuredPosition: i,
     published: true,
     position: i,
-    isDemo: true,
+    isDemo: false,
   };
 });
 
@@ -121,7 +107,7 @@ export const products: Product[] = productDefs.map((d, i) => ({
 export const productImages: ProductImage[] = products.flatMap((p, i) => {
   const main = img(`product-${i + 1}` as ManifestKey);
   const detail = img(`product-${i + 1}-detail` as ManifestKey);
-  const atm = img(i % 2 ? "studio-2" : "process-2");
+  const atm = i % 2 ? img("studio-2") : tattooPhotos[0];
   return [
     { id: p.id * 10 + 1, productId: p.id, url: main.file, width: main.width, height: main.height, alt: `${p.name} — ${main.alt}`, kind: "product" as const, position: 0 },
     { id: p.id * 10 + 2, productId: p.id, url: detail.file, width: detail.width, height: detail.height, alt: `${p.name} — ${detail.alt}`, kind: "product" as const, position: 1 },

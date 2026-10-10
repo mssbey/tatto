@@ -4,7 +4,7 @@ import { formatAddress, getSettings, socialLinks, whatsappLink } from "@/lib/set
 
 export const metadata: Metadata = {
   title: "Randevu Talebi",
-  description: "Dövme fikrini paylaşmak için Tattoo Squid ile iletişime geç.",
+  description: "Dövme fikrini paylaşmak için Tattoo station ile iletişime geç.",
   alternates: { canonical: "/randevu" },
 };
 

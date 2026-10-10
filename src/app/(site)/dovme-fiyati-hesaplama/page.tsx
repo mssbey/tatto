@@ -19,7 +19,7 @@ export default function TattooPricePage() {
       <details className="mt-8 border-b border-line pb-5 text-sm text-ash">
         <summary className="text-bone/80">Tahmin nasıl hazırlanıyor?</summary>
         <div className="mt-4 max-w-3xl space-y-3 leading-relaxed">
-          <p>9 Ekim 2026 tarihinde incelenen stüdyo rehberlerindeki başlangıç ücretleri ve boyuta göre fiyat aralıkları esas alındı. Alan, renk, kapatma, detay ve özel tasarım için kullanılan katsayılar yaklaşık bütçe modeli olarak oluşturuldu; Tattoo Squid’in kesin fiyat tarifesi değildir.</p>
+          <p>9 Ekim 2026 tarihinde incelenen stüdyo rehberlerindeki başlangıç ücretleri ve boyuta göre fiyat aralıkları esas alındı. Alan, renk, kapatma, detay ve özel tasarım için kullanılan katsayılar yaklaşık bütçe modeli olarak oluşturuldu; Tattoo station’in kesin fiyat tarifesi değildir.</p>
           <p>Kaynaklar: <a className="underline" href="https://begotattoo.com/minimal-dovme/" target="_blank" rel="noreferrer">BegoTattoo</a>, <a className="underline" href="https://www.bosphorusink.com/sss" target="_blank" rel="noreferrer">Bosphorus Ink</a>, <a className="underline" href="https://ersintattoo.com/dovme-fiyatlari" target="_blank" rel="noreferrer">Ersin Tattoo</a>.</p>
           <p>Ölçüler 1–30 cm arasında seçilebilir. Daha büyük çalışmalar ve kapatma projeleri için doğrudan görüşme önerilir.</p>
         </div>

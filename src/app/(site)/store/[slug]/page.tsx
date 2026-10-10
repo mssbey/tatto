@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const img = p.images.find((i) => i.kind === "product");
   return {
     title: p.name,
-    description: p.description.slice(0, 160) || `${p.name} — Tattoo Squid Store`,
+    description: p.description.slice(0, 160) || `${p.name} — Tattoo station Store`,
     alternates: { canonical: `/store/${p.slug}` },
     openGraph: { title: p.name, images: img ? [{ url: img.url, width: img.width, height: img.height }] : undefined },
     robots: p.isDemo ? { index: false, follow: false } : undefined,
@@ -63,7 +63,7 @@ export default async function ProductPage({ params }: { params: Params }) {
         description: product.description || undefined,
         url: `${env.siteUrl}/store/${product.slug}`,
         image: productImages.map((i) => (i.url.startsWith("http") ? i.url : `${env.siteUrl}${i.url}`)),
-        brand: { "@type": "Brand", name: "Tattoo Squid" },
+        brand: { "@type": "Brand", name: "Tattoo station" },
         ...(product.year ? { productionDate: String(product.year) } : {}),
         offers: {
           "@type": "Offer",

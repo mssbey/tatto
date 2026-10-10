@@ -2,7 +2,7 @@
 
 /**
  * Marka imzası. Yönetim panelinden logo yüklendiğinde (settings.logoUrl) otomatik
- * olarak logo görseli kullanılır; aksi halde tipografik "TATTOO SQUID" wordmark.
+ * olarak logo görseli kullanılır; aksi halde tipografik "TATTOO STATION" wordmark.
  */
 export function Wordmark({
   logoUrl,
@@ -17,14 +17,14 @@ export function Wordmark({
     return (
       <img
         src={logoUrl}
-        alt="Tattoo Squid"
+        alt="Tattoo station"
         className={`${size === "xl" ? "h-auto w-full max-w-[1200px]" : "h-7 w-auto sm:h-8"} ${className}`}
       />
     );
   }
   if (size === "xl") {
     return (
-      <span className={`display relative block select-none leading-[0.8] ${className}`} aria-label="Tattoo Squid">
+      <span className={`display relative block select-none leading-[0.8] ${className}`} aria-label="Tattoo station">
         <svg viewBox="0 0 1000 170" className="h-auto w-full" aria-hidden>
           <text
             x="0"
@@ -34,7 +34,7 @@ export function Wordmark({
             fill="currentColor"
             style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 196, fontVariationSettings: '"opsz" 72' }}
           >
-            TATTOO SQUID
+            TATTOO STATION
           </text>
         </svg>
       </span>
@@ -44,7 +44,7 @@ export function Wordmark({
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <SquidGlyph className="h-6 w-6 shrink-0 text-blood" />
       <span className="display text-[1.45rem] leading-none tracking-[0.04em] sm:text-[1.6rem]">
-        Tattoo<span className="text-ash"> </span>Squid
+        Tattoo<span className="text-ash"> </span>station
       </span>
     </span>
   );

@@ -1,4 +1,4 @@
-# Tattoo Squid — statik site
+# Tattoo station — statik site
 
 Dövme stüdyosu ve koleksiyonluk sanat mağazası için tanıtım sitesi. Next.js 16 (App Router, `output: "export"`), TypeScript, Tailwind CSS 4, Motion.
 

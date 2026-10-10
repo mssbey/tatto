@@ -132,7 +132,7 @@ export function AtelierSection({ images }: { images: Visual[] }) {
                 </defs>
                 <circle cx="100" cy="100" r="99" fill="#0b0b0c" />
                 <text fontSize="14" fill="currentColor" textLength="486" lengthAdjust="spacing" style={{ fontFamily: "var(--font-sans)", fontWeight: 600 }}>
-                  <textPath href="#atelier-circle">TATTOO SQUID · MÜREKKEP · TEN · DUVAR · </textPath>
+                  <textPath href="#atelier-circle">TATTOO STATION · MÜREKKEP · TEN · DUVAR · </textPath>
                 </text>
               </svg>
               <svg viewBox="0 0 32 32" fill="none" className="absolute left-1/2 top-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 text-blood">
